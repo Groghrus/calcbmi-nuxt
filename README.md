@@ -4,7 +4,7 @@
 
 Небольшое приложение для расчета индекса массы тела (BMI)
 
-## Link Demo / ссылка на демо: https://reverent-fermat-a84f99.netlify.app/
+## Link Demo / ссылка на демо: https://calcbmi-demo.netlify.app
 
 ## Build Setup
 
