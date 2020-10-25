@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto px-4 pt-6 max-w-lg">
-     <p class="text-4xl font-bold mb-4">Ваш результат</p>
-    <div class="rounded bg-gray-700 p-6 text-center">
+    <p class="text-4xl font-bold mb-4">Ваш результат</p>
+    <div class="rounded bg-gray-700 p-6 mb-4 text-center">
       <p class="text-green-400 font-bold uppercase">{{ result.label }}</p>
       <p class="text-6xl font-bold text">{{bmi || '27'}}</p>
       <p class="text-gray-400 font-bold">{{ result.label }} BMI</p>
@@ -12,7 +12,7 @@
         @click="share"
       >Поделиться</button>
     </div>
-    <nuxt-link to="/" class="bg-red-600 font-bold uppercase text-center p-4 fixed w-full bottom-0 left-0">
+    <nuxt-link to="/" class="block rounded bg-red-600 font-bold uppercase text-center  p-4 w-full">
       Пересчитайте ваш индекс BMI
     </nuxt-link>
   </div>
@@ -64,7 +64,7 @@ export default {
         navigator
           .share({
             title: `Мой BMI ${this.bmi}`,
-            text: 'Индекс массы тела'
+            text: `Мой Индекс массы тела ${this.bmi}`
           })
           .then(() => console.log('Successful share'))
           .catch(error => console.log('Error sharing', error))

@@ -3,11 +3,11 @@
       <gender @genderListener="saveGender"/>
       <height @heightListener="saveHeight"/>
       <weight @awListener="saveAgeWeigh"/>
-      <button
-        @click="calculateBMI"
-        class="bg-blue-600 font-bold uppercase p-4 fixed w-full bottom-0 left-0">
-        Расчитайте ваш индекс BMI
-      </button>
+    <button
+      @click="calculateBMI"
+      class="bg-blue-600 rounded font-bold uppercase p-4 w-full">
+      Расчитайте ваш индекс BMI
+    </button>
   </div>
 </template>
 
